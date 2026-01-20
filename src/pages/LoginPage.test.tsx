@@ -93,7 +93,7 @@ describe('LoginPage', () => {
         await user.type(passwordInput, 'abcdefgh');
         await user.click(screen.getByRole('button', { name: '登入' }));
 
-        expect(screen.getByText('密碼必須包含英文字母和數字')).toBeInTheDocument();
+        expect(screen.getByText('密碼必須包含rtertrtsrst英文字母和數字')).toBeInTheDocument();
     });
 
     it('【Validation】驗證密碼複雜度檢查 - 正確格式', async () => {
